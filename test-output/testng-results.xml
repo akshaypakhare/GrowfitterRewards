@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="156122" started-at="2020-08-22T01:35:46 IST" finished-at="2020-08-22T01:38:22 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="156122" started-at="2020-08-22T01:35:46 IST" finished-at="2020-08-22T01:38:22 IST">
+      <class name="growfitter.fitkit.Login">
+        <test-method status="PASS" signature="killAllNodes()[pri:0, instance:growfitter.fitkit.Login@5bcea91b]" name="killAllNodes" is-config="true" duration-ms="5026" started-at="2020-08-22T01:35:46 IST" finished-at="2020-08-22T01:35:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killAllNodes -->
+        <test-method status="PASS" signature="loginRewardUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:growfitter.fitkit.Login@5bcea91b]" name="loginRewardUser" duration-ms="78770" started-at="2020-08-22T01:35:51 IST" data-provider="LoginCredential" finished-at="2020-08-22T01:37:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7021190950]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[000000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginRewardUser -->
+        <test-method status="PASS" signature="loginRewardUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:growfitter.fitkit.Login@5bcea91b]" name="loginRewardUser" duration-ms="72200" started-at="2020-08-22T01:37:10 IST" data-provider="LoginCredential" finished-at="2020-08-22T01:38:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[7021190950]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123654]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginRewardUser -->
+      </class> <!-- growfitter.fitkit.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

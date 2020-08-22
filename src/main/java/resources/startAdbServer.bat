@@ -1,0 +1,1 @@
+C:\Users\aksha>adb start-server
