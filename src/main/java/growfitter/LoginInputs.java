@@ -1,4 +1,4 @@
-package growfitter.fitkit;
+package growfitter;
 
 import java.lang.reflect.Method;
 

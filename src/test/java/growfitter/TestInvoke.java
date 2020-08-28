@@ -1,4 +1,4 @@
-package growfitter.fitkit;
+package growfitter;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import growfitter.fitkit.Base;
+import growfitter.Base;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 

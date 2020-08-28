@@ -1,4 +1,4 @@
-package growfitter.fitkit;
+package growfitter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -55,7 +55,7 @@ public class Base {
 	
 	public static  AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException
 	{
-	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/growfitter/fitkit/global.properties");
+	FileInputStream fis=new FileInputStream(System.getProperty("user.dir")+"/src/main/java/growfitter/global.properties");
 	Properties prop= new Properties();
 	prop.load(fis);
 

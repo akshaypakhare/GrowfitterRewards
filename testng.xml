@@ -9,7 +9,7 @@
 
   <test thread-count="5" name="Test">
     <classes>
-      <class name="growfitter.fitkit.Login">
+      <class name="growfitter.Login">
       	<methods>
       		<include name="loginRewardUser"></include>
       	</methods>

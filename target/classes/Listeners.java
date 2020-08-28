@@ -6,7 +6,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import growfitter.fitkit.Base;
+import growfitter.Base;
 public class Listeners implements ITestListener {
 
     @Override		
