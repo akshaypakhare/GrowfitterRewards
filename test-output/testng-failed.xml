@@ -7,12 +7,12 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="growfitter.fitkit.Login">
+      <class name="fitkit.Login">
         <methods>
-          <include name="loginRewardUser" invocation-numbers="0"/>
           <include name="killAllNodes"/>
+          <include name="loginFitkit" invocation-numbers="0"/>
         </methods>
-      </class> <!-- growfitter.fitkit.Login -->
+      </class> <!-- fitkit.Login -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

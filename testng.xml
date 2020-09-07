@@ -7,7 +7,7 @@
 	<listener class-name="resources.ExtentReporterNG"/>
 </listeners>
 
-  <test thread-count="5" name="Test">
+  <!-- <test thread-count="5" name="Test">
     <classes>
       <class name="growfitter.Login">
       	<methods>
@@ -15,6 +15,14 @@
       	</methods>
       </class>
     </classes>
-  </test> <!-- Test -->
+  </test> -->
   
-</suite> <!-- Suite -->
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="fitkit.Login"/><!-- 
+      <class name="fitkit.Sessions"/>
+      <class name="fitkit.Dashboard"/> -->
+    </classes>
+  </test>
+  
+</suite> 

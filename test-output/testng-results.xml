@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="6" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="171872" started-at="2020-08-29T01:25:51 IST" finished-at="2020-08-29T01:28:43 IST">
+  <suite name="Suite" duration-ms="83259" started-at="2020-09-04T01:16:52 IST" finished-at="2020-09-04T01:18:15 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="171872" started-at="2020-08-29T01:25:51 IST" finished-at="2020-08-29T01:28:43 IST">
-      <class name="growfitter.Login">
-        <test-method status="PASS" signature="killAllNodes()[pri:0, instance:growfitter.Login@5bcea91b]" name="killAllNodes" is-config="true" duration-ms="5033" started-at="2020-08-29T01:25:51 IST" finished-at="2020-08-29T01:25:56 IST">
+    <test name="Test" duration-ms="83259" started-at="2020-09-04T01:16:52 IST" finished-at="2020-09-04T01:18:15 IST">
+      <class name="fitkit.Login">
+        <test-method status="PASS" signature="killAllNodes()[pri:0, instance:fitkit.Login@5bcea91b]" name="killAllNodes" is-config="true" duration-ms="5025" started-at="2020-09-04T01:16:47 IST" finished-at="2020-09-04T01:16:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- killAllNodes -->
-        <test-method status="PASS" signature="loginRewardUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:growfitter.Login@5bcea91b]" name="loginRewardUser" duration-ms="95118" started-at="2020-08-29T01:25:56 IST" data-provider="LoginCredential" finished-at="2020-08-29T01:27:32 IST">
+        <test-method status="FAIL" signature="loginFitkit(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:fitkit.Login@5bcea91b]" name="loginFitkit" duration-ms="81178" started-at="2020-09-04T01:16:52 IST" data-provider="DBlogincred" finished-at="2020-09-04T01:18:13 IST">
           <params>
             <param index="0">
               <value>
@@ -20,7 +20,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[000000]]>
+                <![CDATA[999999]]>
               </value>
             </param>
             <param index="2">
@@ -29,31 +29,77 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@text='Select Customer']})]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@text='Select Customer']})
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
+at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
+at fitkit.Login.loginFitkit(Login.java:50)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@517566b (tried for 1 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+... 31 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@text='Select Customer']})
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-00S2SDK', ip: '192.168.43.221', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: driver.version: AndroidDriver
+at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginRewardUser -->
-        <test-method status="PASS" signature="loginRewardUser(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:growfitter.Login@5bcea91b]" name="loginRewardUser" duration-ms="71600" started-at="2020-08-29T01:27:32 IST" data-provider="LoginCredential" finished-at="2020-08-29T01:28:43 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[7021190950]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123654]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginRewardUser -->
-      </class> <!-- growfitter.Login -->
+        </test-method> <!-- loginFitkit -->
+      </class> <!-- fitkit.Login -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

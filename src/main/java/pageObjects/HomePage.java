@@ -26,5 +26,10 @@ public class HomePage {
 	
 	@AndroidFindBy(xpath="//*[@text='Rewards']")
 	public WebElement RewardsOption;
+
+	@AndroidFindBy(xpath="//*[@text='Sessions']")
+	public WebElement SessionOption;
 	
+	@AndroidFindBy(xpath="//*[@text='Dashboard']")
+	public WebElement DashboardOption;
 }
